@@ -1,0 +1,9 @@
+version: '3.6'
+
+services:
+  main:
+    image: xhofe/alist:latest  # switch to dev branch: rongronggg9/rss-to-telegram:dev
+    container_name: rsstt  # need to be unique
+    restart: unless-stopped
+    volumes:
+      - ./config:/app/config
